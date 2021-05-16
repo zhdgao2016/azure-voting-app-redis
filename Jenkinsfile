@@ -11,6 +11,7 @@ pipeline {
             steps {
                 sh 'docker images -a'
                 sh 'cd azure-vote/'
+                sh 'pwd'
                 sh 'docker images -a'
                 sh 'docker build -t jenkins-pipeline .'
                 sh 'docker images -a'
