@@ -13,7 +13,6 @@ pipeline {
                 cd azure-vote/
                 docker images -a
                 docker build -t jenkins-pipeline .
-                echo 'build Completed'
                 docker images -a
                 cd ..       '''             
             }
